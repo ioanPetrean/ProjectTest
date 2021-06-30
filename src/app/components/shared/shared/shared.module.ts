@@ -40,7 +40,8 @@ import { AppSettingsComponent } from '../../app-settings/app-settings.component'
 
   ],
   entryComponents: [
-    AppSettingsControlsComponent
+    AppSettingsControlsComponent,
+    AppMenuComponent
   ],
   exports: [
     RouterModule,
