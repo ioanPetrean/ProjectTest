@@ -1,0 +1,17 @@
+:host {
+    flex: 1 auto;
+    height: 100%;
+    display: flex;
+}
+
+.container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto 200px;
+    .content {
+        background-color: red;
+    }
+    .asside {
+        background-color: black;
+    }
+}

@@ -1,0 +1,33 @@
+ul.menu {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    border-radius: 6px;
+    justify-content: stretch;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    justify-content: stretch;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+ul.menu li {
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+}
+
+ul.menu li.active {
+    background-color: #08c;
+}
