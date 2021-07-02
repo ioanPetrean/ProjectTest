@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppDynamicComponent } from './app-dynamic.component';
+import { NumpadKeboardComponent } from './numpad-keboard.component';
 
-describe('AppDynamicComponent', () => {
-  let component: AppDynamicComponent;
-  let fixture: ComponentFixture<AppDynamicComponent>;
+describe('NumpadKeboardComponent', () => {
+  let component: NumpadKeboardComponent;
+  let fixture: ComponentFixture<NumpadKeboardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppDynamicComponent ]
+      declarations: [ NumpadKeboardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppDynamicComponent);
+    fixture = TestBed.createComponent(NumpadKeboardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

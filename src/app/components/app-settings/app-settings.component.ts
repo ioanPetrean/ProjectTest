@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DynamicModel } from '../app-dynamic/app-dynamic.component';
+import { FooterService } from '../app-footer/app-footer.service';
 import { AppSettingsControlsComponent } from '../app-settings-controls/app-settings-controls.component';
-
 
 @Component({
   selector: 'app-settings',
@@ -9,8 +8,10 @@ import { AppSettingsControlsComponent } from '../app-settings-controls/app-setti
   styleUrls: ['./app-settings.component.scss']
 })
 export class AppSettingsComponent implements OnInit {
-  constructor() {
-
+  constructor(private fs: FooterService) {
+    this.fs.setDynamic({
+      component: AppSettingsControlsComponent
+    });
   }
 
   ngOnInit() {

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 import { SharedService } from './components/shared/shared/shared.service';
 
 
@@ -7,10 +8,15 @@ import { SharedService } from './components/shared/shared/shared.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'ProjectTest';
 
   constructor(private Service: SharedService){
 
   }
+  ngOnInit() {
+  
+  }
+
+
 }

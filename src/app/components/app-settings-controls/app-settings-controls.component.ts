@@ -3,8 +3,8 @@ import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-settings-controls',
-  template: ` <div>Ioan Petrean</div>
-`
+  templateUrl: 'app-settings-controls.component.html',
+  styleUrls: ['./app-settings-controls.component.css']
 })
 export class AppSettingsControlsComponent {
 

@@ -9,14 +9,14 @@ import { DemoMaterialModule } from './components/shared/shared/material.module';
 import {BrowserModule} from '@angular/platform-browser';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 import { SharedModule } from './components/shared/shared/shared.module';
-
-
-
-
+import { CopyrightPageComponent } from './components/copyright-page/copyright-page.component';
+import { NumpadKeboardComponent } from './components/numpad-keboard/numpad-keboard.component';
+import { AppPickerComponent } from './components/app-picker/app-picker.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    CopyrightPageComponent,
 
   ],
   imports: [
@@ -26,7 +26,10 @@ import { SharedModule } from './components/shared/shared/shared.module';
     DemoMaterialModule,
     SharedModule
   ],
-  entryComponents: [AppComponent],
+  entryComponents: [AppComponent,
+    CopyrightPageComponent,
+    NumpadKeboardComponent,
+    AppPickerComponent],
   bootstrap: [AppComponent],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } }

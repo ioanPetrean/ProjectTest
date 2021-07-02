@@ -30,16 +30,16 @@ import { AppSettingsComponent } from './components/app-settings/app-settings.com
                 path: 'settings',
                 component: AppSettingsComponent,
                 children: [
-                    {
-                        path: 'first',
-                        component: AppFirstComponent
-                    },
+ 
                     {
                         path: '',
                         pathMatch: 'full',
                         redirectTo: 'first'
                     },
-
+                    {
+                        path: 'first',
+                        component: AppFirstComponent
+                    },
                     {
                         path: 'second',
                         component: AppSecondComponent,

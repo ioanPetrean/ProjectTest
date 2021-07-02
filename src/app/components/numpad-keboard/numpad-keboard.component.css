@@ -1,0 +1,17 @@
+.numpad-body{
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 5px;
+}
+.numpad-body button{
+    background-color: #ccc;
+    font-size: 1.37rem;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+.numpad-body button.clear-btn {
+    grid-row: 3;
+    grid-column: 3/5;
+}

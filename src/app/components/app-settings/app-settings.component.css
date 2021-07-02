@@ -1,0 +1,29 @@
+:host {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 200px;
+      grid-template-columns: auto 200px;
+}
+
+.container .content {
+  background-color: grey;
+  color: black;
+}
+
+.container .asside {
+  background-color: black;
+}
+/*# sourceMappingURL=app-settings.component.css.map */

@@ -31,3 +31,10 @@ ul.menu li {
 ul.menu li.active {
     background-color: #08c;
 }
+.menu li{
+    list-style-type: none;
+  }
+  .menu ul li{
+      display: block;
+      
+  }

@@ -13,8 +13,8 @@ import { AppHomeComponent } from '../../app-home/app-home.component';
 import { AppFirstComponent } from '../../app-first/app-first.component';
 import { AppSecondComponent } from '../../app-second/app-second.component';
 import { AppSettingsComponent } from '../../app-settings/app-settings.component';
-
-
+import { NumpadKeboardComponent } from '../../numpad-keboard/numpad-keboard.component';
+import { AppPickerComponent } from '../../app-picker/app-picker.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,9 @@ import { AppSettingsComponent } from '../../app-settings/app-settings.component'
     AppFooterComponent,
     AppSettingsComponent,
     AppAsideComponent,
-    AppSettingsControlsComponent
+    AppSettingsControlsComponent,
+    NumpadKeboardComponent,
+    AppPickerComponent
   ],
 
   imports: [
@@ -56,6 +58,8 @@ import { AppSettingsComponent } from '../../app-settings/app-settings.component'
     MatButtonModule,
     MatSelectModule,
     MatIconModule,
+    NumpadKeboardComponent,
+    AppPickerComponent
   ],
 })
 export class SharedModule { }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FooterService } from '../app-footer/app-footer.service';
+import { CopyrightPageComponent } from '../copyright-page/copyright-page.component';
 
 
 @Component({
@@ -9,6 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppHomeComponent {
 
+constructor(private fs: FooterService){
+fs.setDynamic({
+  component: CopyrightPageComponent
+})
+}
 
 
 }

@@ -8,8 +8,11 @@
     flex: 1;
     display: grid;
     grid-template-columns: auto 200px;
+    
     .content {
-        background-color: red;
+        background-color: grey;
+        color: black;
+
     }
     .asside {
         background-color: black;
